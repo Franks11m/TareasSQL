@@ -20,4 +20,4 @@ FROM client;
   ```
   - Captura:
 
-<img src="./capturas/sentence01.png" alt="drawing" width="500"/>
+<img src="Captura/Captura de pantalla 2024-05-30 162429.png" alt="drawing" width="500"/>
