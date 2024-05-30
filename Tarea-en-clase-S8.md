@@ -9,7 +9,7 @@ FROM product;
   ```
   - Captura:
 
-<img src="./capturas/Captura de pantalla 2024-05-30 154858.png" alt="drawing" width="500"/>
+<img src="./Captura/Captura de pantalla 2024-05-30 154858.png" alt="drawing" width="500"/>
 
 ## 2. Numero de cliente por ciudad
 Utilizar la palabra "DISTINCT"
