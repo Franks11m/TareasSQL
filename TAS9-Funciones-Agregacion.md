@@ -88,6 +88,7 @@ FROM registrations;
   - Captura:
 
 <img src="Captura/Captura de pantalla 2024-06-11 223003.png" alt="drawing" width="500"/>
+
 ## 5. Obtener el número total de eventos por cada ciudad
 
   - Sentencia:
