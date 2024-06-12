@@ -56,7 +56,7 @@ FROM members;
   ```
   - Captura:
 
-<img src="Captura/Captura de pantalla 2024-06-11 221048.png" alt="drawing" width="500"/>
+<img src="Captura/Captura de pantalla 2024-06-11 222853.png" alt="drawing" width="500"/>
 
 ## 2. Obtener la edad mínima de los miembros
   - Sentencia:
@@ -66,7 +66,7 @@ FROM members;
   ```
   - Captura:
 
-<img src="Captura/Captura de pantalla 2024-05-30 162429.png" alt="drawing" width="500"/>
+<img src="Captura/Captura de pantalla 2024-06-11 222911.png" alt="drawing" width="500"/>
 
 ## 3. obtener el número total de registros asistidos
   - Sentencia:
@@ -76,7 +76,7 @@ FROM registrations;
   ```
   - Captura:
 
-<img src="Captura/Captura de pantalla 2024-06-11 221048.png" alt="drawing" width="500"/>
+<img src="Captura/Captura de pantalla 2024-06-11 222944.png" alt="drawing" width="500"/>
 
 ## 4. obtener el número total de asistentes a todas las conferencias
 
@@ -87,7 +87,7 @@ FROM registrations;
   ```
   - Captura:
 
-<img src="Captura/Captura de pantalla 2024-05-30 162429.png" alt="drawing" width="500"/>
+<img src="Captura/Captura de pantalla 2024-06-11 223003.png" alt="drawing" width="500"/>
 ## 5. obtener el número total de eventos por cada ciudad:
 
   - Sentencia:
@@ -99,7 +99,7 @@ GROUP BY city;
   ```
   - Captura:
 
-<img src="Captura/Captura de pantalla 2024-06-11 221048.png" alt="drawing" width="500"/>
+<img src="Captura/Captura de pantalla 2024-06-11 223022.png" alt="drawing" width="500"/>
 
 ## 6. obtener el número de registros por cada miembro:
   - Sentencia:
@@ -110,7 +110,7 @@ GROUP BY member_id;
   ```
   - Captura:
 
-<img src="Captura/Captura de pantalla 2024-05-30 162429.png" alt="drawing" width="500"/>
+<img src="Captura/Captura de pantalla 2024-06-11 223042.png" alt="drawing" width="500"/>
 
 ## 7. obtener el número de registros por cada conferencia:
   - Sentencia:
@@ -120,6 +120,6 @@ FROM registrations
 GROUP BY event_id;
   ```
   - Captura:
-<img src="Captura/Captura de pantalla 2024-06-11 221048.png" alt="drawing" width="500"/>
+<img src="Captura/Captura de pantalla 2024-06-11 223100.png" alt="drawing" width="500"/>
 
 
