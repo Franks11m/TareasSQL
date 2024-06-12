@@ -8,7 +8,7 @@ FROM members;
   ```
   - Captura:
 
-<img src="./Captura/Captura de pantalla 2024-05-30 154858.png" alt="drawing" width="500"/>
+<img src="Captura/Captura de pantalla 2024-06-11 221048.png" alt="drawing" width="500"/>
 
 ## 2. Obtener la edad mínima de los miembros
   - Sentencia:
