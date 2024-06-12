@@ -68,7 +68,7 @@ FROM members;
 
 <img src="Captura/Captura de pantalla 2024-06-11 222911.png" alt="drawing" width="500"/>
 
-## 3. obtener el número total de registros asistidos
+## 3. Obtener el número total de registros asistidos
   - Sentencia:
   ```
 SELECT COUNT(*) AS total_registrations
@@ -78,7 +78,7 @@ FROM registrations;
 
 <img src="Captura/Captura de pantalla 2024-06-11 222944.png" alt="drawing" width="500"/>
 
-## 4. obtener el número total de asistentes a todas las conferencias
+## 4. Obtener el número total de asistentes a todas las conferencias
 
   - Sentencia:
   ```
@@ -88,7 +88,7 @@ FROM registrations;
   - Captura:
 
 <img src="Captura/Captura de pantalla 2024-06-11 223003.png" alt="drawing" width="500"/>
-## 5. obtener el número total de eventos por cada ciudad:
+## 5. Obtener el número total de eventos por cada ciudad
 
   - Sentencia:
   ```
@@ -101,7 +101,7 @@ GROUP BY city;
 
 <img src="Captura/Captura de pantalla 2024-06-11 223022.png" alt="drawing" width="500"/>
 
-## 6. obtener el número de registros por cada miembro:
+## 6. Obtener el número de registros por cada miembro
   - Sentencia:
   ```
 SELECT member_id, COUNT(*) AS registrations_count
@@ -112,7 +112,7 @@ GROUP BY member_id;
 
 <img src="Captura/Captura de pantalla 2024-06-11 223042.png" alt="drawing" width="500"/>
 
-## 7. obtener el número de registros por cada conferencia:
+## 7. Obtener el número de registros por cada conferencia
   - Sentencia:
   ```
 SELECT event_id, COUNT(*) AS registrations_count
