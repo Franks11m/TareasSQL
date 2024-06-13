@@ -54,7 +54,7 @@ WHERE category = 'Electronics';
   ```
   - Captura:
 
-<img src="Captura/Captura de pantalla 2024-06-11 222853.png" alt="drawing" width="500"/>
+<img src="Captura/Captura de pantalla 2024-06-12 180920.png" alt="drawing" width="500"/>
 
 ## 2. Contar el número de clientes en una ciudad específica.
   - Sentencia:
@@ -66,7 +66,7 @@ WHERE city = 'New York';
   ```
   - Captura:
 
-<img src="Captura/Captura de pantalla 2024-06-11 222911.png" alt="drawing" width="500"/>
+<img src="Captura/Captura de pantalla 2024-06-12 180937.png" alt="drawing" width="500"/>
 
 ## 3. Contar el número de productos cuyo precio está dentro de un rango específico 
   - Sentencia:
@@ -78,7 +78,7 @@ WHERE price BETWEEN 100 AND 500;
   ```
   - Captura:
 
-<img src="Captura/Captura de pantalla 2024-06-11 222944.png" alt="drawing" width="500"/>
+<img src="Captura/Captura de pantalla 2024-06-12 180958.png" alt="drawing" width="500"/>
 
 ## 4. Seleccionar clientes que viven en una ciudad específica y tienen un tipo de cliente específico
 
@@ -91,7 +91,7 @@ WHERE city = 'Los Angeles' AND type_of_client = 'Premium';
   ```
   - Captura:
 
-<img src="Captura/Captura de pantalla 2024-06-11 223003.png" alt="drawing" width="500"/>
+<img src="Captura/Captura de pantalla 2024-06-12 181014.png" alt="drawing" width="500"/>
 
 ## 5. Seleccionar productos que pertenecen a una categoría específica y cuyo precio está por encima de un valor específico
 
@@ -105,7 +105,7 @@ WHERE category = 'Electronics' AND price > 500;
   ```
   - Captura:
 
-<img src="Captura/Captura de pantalla 2024-06-11 223022.png" alt="drawing" width="500"/>
+<img src="Captura/Captura de pantalla 2024-06-12 181033.png" alt="drawing" width="500"/>
 
 ## 6. Seleccionar productos que fueron producidos en un año específico y en un país de origen específico
   - Sentencia:
@@ -117,7 +117,7 @@ WHERE year_of_production = 2022 AND country_of_origin = 'USA';
   ```
   - Captura:
 
-<img src="Captura/Captura de pantalla 2024-06-11 223042.png" alt="drawing" width="500"/>
+<img src="Captura/Captura de pantalla 2024-06-12 181049.png" alt="drawing" width="500"/>
 
 ## 7. Seleccionar clientes cuyo nombre completo comience con 'J'.
   - Sentencia:
@@ -128,7 +128,7 @@ WHERE full_name LIKE 'J%';
 
   ```
   - Captura:
-<img src="Captura/Captura de pantalla 2024-06-11 223100.png" alt="drawing" width="500"/>
+<img src="Captura/Captura de pantalla 2024-06-12 181108.png" alt="drawing" width="500"/>
 
 ## 8. Seleccionar clientes cuya ciudad contenga la letra 'a'
   - Sentencia:
@@ -139,4 +139,4 @@ WHERE city LIKE '%a%';
 
   ```
   - Captura:
-<img src="Captura/Captura de pantalla 2024-06-11 223100.png" alt="drawing" width="500"/>
+<img src="Captura/Captura de pantalla 2024-06-12 181126.png" alt="drawing" width="500"/>
