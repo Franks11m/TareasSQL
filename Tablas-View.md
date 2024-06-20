@@ -1,1 +1,107 @@
+# "Trabajo en clase"
+### USO DEL VIEW
+## Creacion de tres tablas:
+ ```
+SELECT i.id, i.code, i.create_at,i.total,c.full_name
+FROM invoice i JOIN client c
+  ON c.id=i.client_id;
 
+ ```
+## Proporcionar informacion o datos a cada tabla:
+ ```
+Tabla members
+INSERT INTO members (name, birth_date) VALUES 
+('Alice', '1990-01-15'),
+('Bob', '1985-07-23'),
+('Charlie', '1992-05-30');
+
+Tabla events
+INSERT INTO events (name, city, event_date) VALUES 
+('Tech Conference', 'New York', '2023-06-15'),
+('Business Summit', 'Chicago', '2023-08-20'),
+('Health Expo', 'San Francisco', '2023-09-25');
+
+Tabla registrations
+INSERT INTO registrations (member_id, event_id) VALUES 
+(1, 1),
+(2, 1),
+(3, 2),
+(1, 3),
+(2, 3),
+(3, 3);
+ ```
+
+## 1. Obtener la edad promedio de los miembros
+  - Sentencia:
+  ```
+SELECT AVG(EXTRACT(YEAR FROM AGE(birth_date))) AS avg_age
+FROM members;
+  ```
+  - Captura:
+
+<img src="Captura/Captura de pantalla 2024-06-11 222853.png" alt="drawing" width="500"/>
+
+## 2. Obtener la edad mínima de los miembros
+  - Sentencia:
+  ```
+SELECT MIN(EXTRACT(YEAR FROM AGE(birth_date))) AS min_age
+FROM members;
+  ```
+  - Captura:
+
+<img src="Captura/Captura de pantalla 2024-06-11 222911.png" alt="drawing" width="500"/>
+
+## 3. Obtener el número total de registros asistidos
+  - Sentencia:
+  ```
+SELECT COUNT(*) AS total_registrations
+FROM registrations;
+  ```
+  - Captura:
+
+<img src="Captura/Captura de pantalla 2024-06-11 222944.png" alt="drawing" width="500"/>
+
+## 4. Obtener el número total de asistentes a todas las conferencias
+
+  - Sentencia:
+  ```
+SELECT COUNT(DISTINCT member_id) AS total_attendees
+FROM registrations;
+  ```
+  - Captura:
+
+<img src="Captura/Captura de pantalla 2024-06-11 223003.png" alt="drawing" width="500"/>
+
+## 5. Obtener el número total de eventos por cada ciudad
+
+  - Sentencia:
+  ```
+SELECT city, COUNT(*) AS total_events
+FROM events
+GROUP BY city;
+
+  ```
+  - Captura:
+
+<img src="Captura/Captura de pantalla 2024-06-11 223022.png" alt="drawing" width="500"/>
+
+## 6. Obtener el número de registros por cada miembro
+  - Sentencia:
+  ```
+SELECT member_id, COUNT(*) AS registrations_count
+FROM registrations
+GROUP BY member_id;
+  ```
+  - Captura:
+
+<img src="Captura/Captura de pantalla 2024-06-11 223042.png" alt="drawing" width="500"/>
+
+## 7. Obtener el número de registros por cada conferencia
+  - Sentencia:
+  ```
+SELECT event_id, COUNT(*) AS registrations_count
+FROM registrations
+GROUP BY event_id;
+  ```
+  - Captura:
+<img src="Captura/Captura de pantalla 2024-06-11 223100.png" alt="drawing" width="500"/>
