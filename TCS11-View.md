@@ -13,7 +13,7 @@ FROM invoice i JOIN client c
   ON c.id=i.client_id;
  ```
 - Captura:
-<img src="Captura/Captura de pantalla 2024-06-11 222853.png" alt="drawing" width="500"/>
+<img src="Img/Captura de pantalla 2024-06-28 170351.png" alt="drawing" width="500"/>
 
 ### 2. Crear la tabla adicional "VIEW"
 - CODE:
@@ -30,7 +30,7 @@ FROM invoice i JOIN client c
 SELECT * FROM invoice_view;
  ```
 - Captura:
-<img src="Captura/Captura de pantalla 2024-06-11 222853.png" alt="drawing" width="500"/>
+<img src="Img/Captura de pantalla 2024-06-28 172619.png" alt="drawing" width="500"/>
 
 ## Mostrar Vista detail-product
 ### 1. Verificamos nuestra tabla detail y product funcionen
@@ -41,7 +41,7 @@ FROM detail d JOIN product p
   ON p.id=d.productid;
  ```
 - Captura:
-<img src="Captura/Captura de pantalla 2024-06-11 222853.png" alt="drawing" width="500"/>
+<img src="Img/Captura de pantalla 2024-06-28 173044.png" alt="drawing" width="500"/>
 
 ### 2. Crear la tabla adicional "VIEW"
 - CODE:
@@ -59,7 +59,7 @@ FROM detail d JOIN product p
 SELECT * FROM detail_view;
  ```
 - Captura:
-<img src="Captura/Captura de pantalla 2024-06-11 222853.png" alt="drawing" width="500"/>
+<img src="Img/Captura de pantalla 2024-06-28 173226.png" alt="drawing" width="500"/>
 
 
 
