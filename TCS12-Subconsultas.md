@@ -3,7 +3,7 @@
 ## Uso de "subconsultas" en SQL
 ### Son consultas SQL que se incrustan dentro de otra consulta; estas sirven para proporcionar resultados intermedios que se utilizan en la consulta principal y se usan para realizar operaciones más complejas y específicas en una base de datos.
 
-# Activdad
+# Actividad
 ## DB INVOICE
 ### 1. El numero total de facturas realizadas por cada cliente.
 - CODE:
