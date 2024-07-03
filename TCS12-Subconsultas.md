@@ -16,7 +16,7 @@ WHERE
     i.client_id = 1;
  ```
 - Captura:
-<img src="Img/Captura de pantalla 2024-06-28 170351.png" alt="drawing" width="500"/>
+<img src="Img/Captura de pantalla 2024-07-02 200321.png" alt="drawing" width="500"/>
 
 ### 2. Listar nombre y correo de los clientes junto a su compra mas cara realizada.
 - CODE:
@@ -37,16 +37,19 @@ WHERE
     );
 
  ```
+- Captura:
+<img src="Img/Captura de pantalla 2024-07-02 200607.png" alt="drawing" width="500"/>
+
 ### 3. Listar las facturas donde sus totales sean mayores al promedio de las facturas.
 
 - CODE:
  ```
-SELECT i.created_at, i.total
+SELECT i.create_at, i.total
 From invoice i
 WHERE i.total > (SELECT AVG(total) FROM invoice);
  ```
 - Captura:
-<img src="Img/Captura de pantalla 2024-06-28 172619.png" alt="drawing" width="500"/>
+<img src="Img/Captura de pantalla 2024-07-02 200828.png" alt="drawing" width="500"/>
 
 ## DB EVENT
 ### 1. Subconsulta en SELECT: "Contar conferencias asistidas por miembro"
@@ -65,7 +68,7 @@ FROM
 
  ```
 - Captura:
-<img src="Img/Captura de pantalla 2024-06-28 173044.png" alt="drawing" width="500"/>
+<img src="Img/Captura de pantalla 2024-07-02 202759.png" alt="drawing" width="500"/>
 
 ### 2. Subconsulta en WHERE: "Conferencias con asistentes por encima del promedio"
 - CODE:
@@ -85,7 +88,7 @@ WHERE
 
  ```
 - Captura:
-<img src="Img/Captura de pantalla 2024-06-28 173226.png" alt="drawing" width="500"/>
+<img src="Img/Captura de pantalla 2024-07-02 202832.png" width="500"/>
 
 
 
