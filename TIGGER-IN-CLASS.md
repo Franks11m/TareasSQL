@@ -26,9 +26,9 @@ CREATE TABLE Users (
 );
 ```
 # PROBLEMA
-1.- REALIZAR UN TIGGER QUE DESPUES DE ISTERTAR UN PACIENTE ESTE DEBE INSERTE EL USERS.
+##### 1.- REALIZAR UN TIGGER QUE DESPUES DE ISTERTAR UN PACIENTE ESTE DEBE INSERTE EL USERS.
 
-1.1- CREAMOS LA FUNCION DEL TIGGER O DISPARADOR:
+#### 1.1- Creamos la función del TIGGER o DISPARADOR que cumpla lo solicitado:
 ## CODE:
 ```
 CREATE OR REPLACE FUNCTION after_insert_paciente()
@@ -42,7 +42,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 ```
-1.2- Ejecutamos el tigger:
+#### 1.2- Ejecutamos el tigger:
 ## CODE:
 ```
 CREATE TRIGGER after_insert_paciente_trigger
@@ -50,9 +50,9 @@ AFTER INSERT ON Paciente
 FOR EACH ROW
 EXECUTE FUNCTION after_insert_paciente();
 ```
-1.3 Validamos su funcionaiento insertando datos a la tabla "paciente":
+#### 1.3- Validamos su funcionamiento insertando datos a la tabla "paciente":
 
-1.3.1 Insertamos el paciente "Yuliana" con su respectiva información:
+#### 1.3.1- Insertamos el paciente "Yuliana" con su respectiva información:
 
 ## CODE:
 ```
@@ -64,7 +64,7 @@ VALUES ('Yuliana Cardenas', 'Barrio las Peñas', '096-770-8703', 'A+', 'yuli123@
 <img src = "Img/Captura de pantalla 2024-07-25 105748.png" width = "500">
 
 
-1.3.2 Verficamos en la tabla "Users" si creo la paciente "Yuliana":
+#### 1.3.2- Verficamos en la tabla "Users" si creo la paciente "Yuliana":
 
 ## CODE:
 ```
